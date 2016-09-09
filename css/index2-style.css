@@ -1,0 +1,30 @@
+a.button {
+  width: 200px;
+  color: green;
+}
+
+#speech1 {
+	width: 500px;
+}
+
+.tear {
+	display: none;
+	margin-top: 50px;
+	margin-left: 275px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0.8em;
+  height: 0.8em;
+  border: none;
+  -webkit-border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+  border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #1abc9c;
+  -webkit-transform: rotateZ(-45deg)   ;
+  transform: rotateZ(-45deg)   ;
+  position: absolute;
+}

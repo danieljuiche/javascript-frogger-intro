@@ -3,7 +3,7 @@ $(document).ready(function() {
     inClass: 'fade-in',
     outClass: 'fade-out',
     inDuration: 500,
-    outDuration: 800,
+    outDuration: 500,
     linkElement: '.animsition-link',
     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
     loading: true,
@@ -22,29 +22,30 @@ $(document).ready(function() {
     transition: function(url){ window.location.href = url; }
   });
 
+  var typeSpeed = 65;
+
   var showChoices = function () {
     $('.choice-container').fadeIn(2000);
-    showSkip();
-  };
-
-  var showSkip = function () {
-    $('.skip').slideDown(1500);
   };
 
   var speech2 = function () {
-    $('#speech2').typeTo(" My name is Spot!");
-    setTimeout(speech3, 2000);
+    var text = " Besides being a selective listener,";
+    $('#speech2').typeTo(text);
+    setTimeout(speech3, typeSpeed * text.length + 500);
   };
 
   var speech3 = function () {
-    $('#speech3').typeTo(" Do you have a moment to help me please?");
-    setTimeout(showChoices, 3500);
+    var text = " I also suffer from Short Term Memory Loss...";
+    $('#speech3').typeTo(text);
+    $('.tear').fadeIn("slow");
+    setTimeout(showChoices, typeSpeed * text.length + 500);
   };
 
   setTimeout(function () {
     $(function () {
-      $('#speech1').typeTo("Hello!");
-      setTimeout(speech2, 600);
+      var text = "Thank you so much for agreeing to help me!";
+      $('#speech1').typeTo(text);
+      setTimeout(speech2, typeSpeed * text.length + 500);
     });
   }, 300);
 });
