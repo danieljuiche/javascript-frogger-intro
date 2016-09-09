@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log("LOADED");
   $(".animsition").animsition({
     inClass: 'fade-in',
     outClass: 'fade-out',
