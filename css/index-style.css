@@ -38,6 +38,10 @@
 	display: inline-block;
 }
 
+#speech1, #speech2 {
+	width: auto;
+}
+
 a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -52,13 +56,14 @@ a.button {
 }
 
 .choice-container {
+	display: none;
 	margin-top: 15px;
 	height: 50px;
 	width: auto;
 	text-align: center;
 }
 
-#no {
+#nope {
 	/*background-color: firebrick;*/
 	color: firebrick;
 }
@@ -68,8 +73,13 @@ a.button {
 	color: green;
 }
 
+.skip {
+	display: none;
+}
+
 .skip a{
 	margin-top: 100px;
+	margin-right: 10px;
 	float: right;
 	font-style: italic;
 	color: grey;

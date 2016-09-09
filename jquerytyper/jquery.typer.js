@@ -234,12 +234,12 @@ String.prototype.rightChars = function(n){
 
     highlight($e);
 
-    // Added in delay option for sentense delay //
+    /* Added in delay option for sentense delay
     if (arguments.length > 1) {
       setTimeout(function() {
         callback();
       }, newString.length * options["typeSpeed"] + options["typePause"]);
-    }
+    }*/
 
     return $e;
   };

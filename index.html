@@ -17,12 +17,13 @@
 				<div class="speech-bubble">
 					<p id="speech1"></p>
 					<p id="speech2"></p>
+					<p id="speech3"></p>
 				</div>
 				<img src="images/char-spot-cropped.png">
 			</div>
 		</div>
 		<div class="choice-container">
-		  <a href="index.html" id="no" class="animsition-link button">NO! <i class="fa fa-frown-o" aria-hidden="true"></i></a>
+		  <a href="index.html" id="nope" class="animsition-link button">NOPE! <i class="fa fa-frown-o" aria-hidden="true"></i></a>
 		  <a href="intro.html" id="yes" class="animsition-link button">OKAY! <i class="fa fa-smile-o" aria-hidden="true"></i></a>
 		</div>
 		<div class="skip">
@@ -38,14 +39,5 @@
 	<script src="jquerytyper/jquery.typer.js"></script>
 	<!-- Main Javascript -->
 	<script src="js/intro.js"></script>
-	<!-- jQuery Testing -->
-
-	<script>
-		$(function () {
-			$('#speech1').typeTo("Hello! My name is Spot!", function () {
-				$('#speech2').typeTo(" Do you have a moment to help me please?");	
-			}, 5000);
-	  });
-	</script>
 </body>
 </html>

@@ -2,7 +2,7 @@ $(document).ready(function() {
   $(".animsition").animsition({
     inClass: 'fade-in',
     outClass: 'fade-out',
-    inDuration: 1500,
+    inDuration: 500,
     outDuration: 800,
     linkElement: '.animsition-link',
     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
@@ -21,4 +21,30 @@ $(document).ready(function() {
     overlayParentElement : 'body',
     transition: function(url){ window.location.href = url; }
   });
+
+  var showChoices = function () {
+    $('.choice-container').fadeIn(2000);
+    showSkip();
+  };
+
+  var showSkip = function () {
+    $('.skip').slideDown(1500);
+  };
+
+  var speech2 = function () {
+    $('#speech2').typeTo(" My name is Spot!");
+    setTimeout(speech3, 2000);
+  };
+
+  var speech3 = function () {
+    $('#speech3').typeTo(" Do you have a moment to help me please?");
+    setTimeout(showChoices, 3500);
+  };
+
+  setTimeout(function () {
+    $(function () {
+      $('#speech1').typeTo("Hello!");
+      setTimeout(speech2, 600);
+    });
+  }, 300);
 });
