@@ -28,6 +28,19 @@ $(document).ready(function() {
     $('.choice-container').fadeIn(2000);
   };
 
+  var showTear = function () {
+    var tear = $('.tear');
+    tear.animate({
+      top: 50,
+      opacity: 100
+    },"slow");  
+  };
+
+  var showCharacter = function () {
+    var sadSpot = $('#sad');
+    sadSpot.fadeIn("slow");
+  };
+
   var speech2 = function () {
     var text = " Besides being a selective listener,";
     $('#speech2').typeTo(text);
@@ -35,10 +48,13 @@ $(document).ready(function() {
   };
 
   var speech3 = function () {
-    var text = " I also suffer from Short Term Memory Loss...";
+    var text = " I also suffer from short term memory loss...";
     $('#speech3').typeTo(text);
-    $('.tear').fadeIn("slow");
     setTimeout(showChoices, typeSpeed * text.length + 500);
+    setTimeout(function () {
+      showCharacter();
+      showTear();
+    }, typeSpeed * text.length / 2 + 500);
   };
 
   setTimeout(function () {
