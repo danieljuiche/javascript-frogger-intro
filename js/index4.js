@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $(".animsition").animsition({
-    inClass: 'fade-in',
-    outClass: 'fade-out-left',
+    inClass: 'fade-in-right',
+    outClass: 'zoom-out',
     inDuration: 500,
     outDuration: 500,
     linkElement: '.animsition-link',
@@ -28,40 +28,23 @@ $(document).ready(function() {
     $('.choice-container').fadeIn(2000);
   };
 
-  var showTear = function () {
-    var tear = $('.tear');
-    tear.animate({
-      top: 50,
-      opacity: 100
-    },1500);  
-  };
-
-  var showCharacter = function () {
-    var sadSpot = $('#sad');
-    sadSpot.fadeIn(1200);
-  };
-
   var speech2 = function () {
-    var text = " Besides being a selective listener,";
+    var text = " but I've forgotten where they are.";
     $('#speech2').typeTo(text);
     setTimeout(speech3, typeSpeed * text.length + 500);
   };
 
   var speech3 = function () {
-    var text = " I also suffer from short term memory loss...";
+    var text = " Please help me find my friends!";
     $('#speech3').typeTo(text);
     setTimeout(showChoices, typeSpeed * text.length + 500);
-    setTimeout(function () {
-      showCharacter();
-      showTear();
-    }, typeSpeed * text.length / 2 + 1200);
   };
 
   setTimeout(function () {
     $(function () {
-      var text = "Thank you so much for agreeing to help me!";
+      var text = "We were playing by the water,";
       $('#speech1').typeTo(text);
-      setTimeout(speech2, typeSpeed * text.length + 500);
+      setTimeout(speech2, typeSpeed * text.length + 200);
     });
   }, 300);
 });

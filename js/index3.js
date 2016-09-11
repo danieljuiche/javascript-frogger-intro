@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $(".animsition").animsition({
-    inClass: 'fade-in',
-    outClass: 'fade-out-left',
+    inClass: 'fade-in-left',
+    outClass: 'fade-out-right',
     inDuration: 500,
     outDuration: 500,
     linkElement: '.animsition-link',
@@ -28,38 +28,27 @@ $(document).ready(function() {
     $('.choice-container').fadeIn(2000);
   };
 
-  var showTear = function () {
-    var tear = $('.tear');
-    tear.animate({
-      top: 50,
-      opacity: 100
-    },1500);  
-  };
-
-  var showCharacter = function () {
-    var sadSpot = $('#sad');
-    sadSpot.fadeIn(1200);
-  };
-
   var speech2 = function () {
-    var text = " Besides being a selective listener,";
+    var text = " We all suffer from Entomophobia,";
     $('#speech2').typeTo(text);
-    setTimeout(speech3, typeSpeed * text.length + 500);
+    setTimeout(speech3, typeSpeed * text.length + 200);
   };
 
   var speech3 = function () {
-    var text = " I also suffer from short term memory loss...";
+    var text = " which means we are deathly afraid of bugs.";
     $('#speech3').typeTo(text);
-    setTimeout(showChoices, typeSpeed * text.length + 500);
-    setTimeout(function () {
-      showCharacter();
-      showTear();
-    }, typeSpeed * text.length / 2 + 1200);
+    setTimeout(speech4, typeSpeed * text.length + 500);
   };
+
+  var speech4 = function () {
+    var text = " Literally!";
+    $('#speech4').typeTo(text);
+    setTimeout(showChoices, typeSpeed * text.length + 500);
+  }
 
   setTimeout(function () {
     $(function () {
-      var text = "Thank you so much for agreeing to help me!";
+      var text = "My friends and I share a common trait.";
       $('#speech1').typeTo(text);
       setTimeout(speech2, typeSpeed * text.length + 500);
     });
