@@ -25,4 +25,9 @@ $(document).ready(function() {
   $('.main').slick({
     infinite: false,
   });
+
+  if ($('#how-to-play').hasClass('slick-current')) {
+    console.log("true");
+  }
+  
 });
