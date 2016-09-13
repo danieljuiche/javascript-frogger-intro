@@ -61,3 +61,26 @@ body {
     vertical-align: middle;
     height: 100vh;
 }
+
+a.button {
+    margin: auto;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-align: center;
+    text-decoration: none;
+    color: gold;
+    font-size: 32px;
+    padding: 5px 5px;
+    width: 220px;
+    align: center;
+}
+
+.button {
+    margin: auto;
+}
+
+#char-box p {
+    font-size: 18px;
+}
