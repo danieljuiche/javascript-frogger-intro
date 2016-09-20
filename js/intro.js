@@ -41,4 +41,16 @@ $(document).ready(function() {
   $('.slick-prev').click(function () {
     $('.main').slick("slickSetOption", "autoplay", false, false);
   });
+
+  var autoPlayInterval = function () {
+    setInterval(function() {
+    var currentSlide = $('.main').slick("slickCurrentSlide");
+      if (currentSlide === 8) {
+        $('.main').slick("slickSetOption","autoplay",false,false);
+        window.clearInterval(autoPlayInterval);
+      }
+    },0);
+  }
+  autoPlayInterval();
+
 });
