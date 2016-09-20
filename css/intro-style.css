@@ -5,7 +5,7 @@
 .main {
     margin: auto;
     width: 92%;
-    height: 98vh;
+    height: 97vh;
     background-color: white;
 }
 
@@ -29,6 +29,7 @@
     color: #00008B;
     font-weight: bold;
     font-size: 24px;
+    line-height: 1.3;
 }
 
 .main img {
@@ -59,7 +60,7 @@ body {
     margin-right: auto;
     display: table-cell;
     vertical-align: middle;
-    height: 100vh;
+    height: 97vh;
 }
 
 a.button {
@@ -67,20 +68,47 @@ a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
-
     text-align: center;
     text-decoration: none;
-    color: gold;
+    color: red;
     font-size: 32px;
     padding: 5px 5px;
     width: 220px;
-    align: center;
 }
 
-.button {
-    margin: auto;
+.hvr-pulse-continuous {
+    display: block;
 }
 
-#char-box p {
-    font-size: 18px;
-}
+/* Height 677px responsive */
+@media (max-height: 800px) {
+    .main h1 {
+        font-size: 52px;
+        margin-bottom: 0px;
+    }
+    .main p {
+        font-size: 16px;
+    }
+
+    .main img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #img-collected {
+        width: 180px;
+        height: auto;
+    }
+
+    #img-info, #img-char {
+        width: 650px;
+        height: auto;
+    }
+
+    #char-box p {
+        margin: auto;
+        margin-bottom: 30px;
+        text-align: center;
+        width: 700px;
+    }
+};

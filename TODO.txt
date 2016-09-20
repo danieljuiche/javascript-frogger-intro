@@ -1,0 +1,4 @@
+- Fix font sizes for different resolutions
+- Add in maximum widths for paragraphs
+- Increase arrow size
+- Find out how to turn off autoplay after a click of a mouse button
