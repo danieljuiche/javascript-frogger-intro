@@ -8,9 +8,9 @@
 	<!-- Animsition Stylesheet -->
 	<link rel="stylesheet" href="animsition/animsition.min.css">
 	<!-- Main Stylesheet -->
-	<link rel="stylesheet" href="css/index-style.css">
+	<link rel="stylesheet" href="css/intro1.css">
 	<!-- Secondary Stylesheet -->
-	<link rel="stylesheet" href="css/index3-style.css">
+	<link rel="stylesheet" href="css/intro2.css">
 </head>
 <body>
 	<div class="animsition">
@@ -21,13 +21,18 @@
 						<p id="speech1"></p>
 						<p id="speech2"></p>
 						<p id="speech3"></p>
-						<p id="speech4"></p>
 					</div>
-					<img src="images/char-spot-cropped.png">
+					<div class="relative">
+						<div class="absolute">
+							<div class="tear"></div>
+							<img id="happy" src="images/char-spot-cropped.png">
+							<img id="sad" src="images/sad-spot.png">
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="choice-container">
-			  <a href="index4.html" id="response" class="animsition-link button">MHMM...</a>
+			  <a href="intro3.html" id="response" class="animsition-link button">UHM...OK?</a>
 			</div>
 		</div>
 	</div>
@@ -39,6 +44,6 @@
 	<!-- jquerytyper Javascript -->
 	<script src="jquerytyper/jquery.typer.js"></script>
 	<!-- Main Javascript -->
-	<script src="js/index3.js"></script>
+	<script src="js/intro2.js"></script>
 </body>
 </html>
